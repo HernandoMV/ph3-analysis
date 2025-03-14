@@ -14,7 +14,7 @@ pip install cp-utils-hmv
 
 1. Use https://github.com/HernandoMV/czi-extract-slices in Fiji to export slices. (Using channel 4 and 10um/px)
 
-2. Register using ABBA and save transformation field and atlas annotations: https://biop.github.io/ijp-imagetoatlas/registration.html#slices-registration
+2. Register using ABBA and save transformation field and atlas annotations: https://abba-documentation.readthedocs.io/en/latest/contents.html#
   - Create a folder called 'QuPath' inside the 'Registration' folder just created by the previous script
   - Open QuPath, and drag the folder to create a new project. Add the images created by the script, selecting BioFormats-builder. Close QuPath.
   - Open ABBA in Fiji and import the QuPath project.
@@ -24,6 +24,8 @@ pip install cp-utils-hmv
   - Register with spline with 10 landmarks, also correcting background and correct registration
   - Export regions to file, and export atlas coordinates to imageJ.
   - Save inside the same folder as the original images
+
+USEFUL: A similar workflow as the described above is shown in the following Abba Tutorial Youtube Video: https://www.youtube.com/watch?v=sERGONVw4zE&t=1s
 
 3. Use https://github.com/HernandoMV/czi-roisplitter to generate the ROIs, loading the region of interest (e.g. Caudoputamen)
 
